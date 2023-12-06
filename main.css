@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#container {
+    display: flex;
+    position: relative;
+}
+
+#map-container {
+    flex: 2;
+    /* Adjust as needed */
+}
+
+#laureate-display,
+#LegendDisplay {
+    flex: 1;
+    /* Adjust as needed */
+    max-width: 300px;
+    /* Adjust as needed */
+}
+
+.filters {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Add media queries as needed */
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+    #map-container,
+    #laureate-display,
+    #LegendDisplay {
+        width: 100%;
+    }
+}
